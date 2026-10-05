@@ -1,0 +1,6 @@
+import { PageIntro, Breadcrumbs } from '@/components/editorial';
+import InquiryForm from '@/components/inquiry-form';
+import { site, whatsappUrl } from '@/config/site';
+import { pageMetadata } from '@/lib/seo';
+export const metadata=pageMetadata('Contact','/contact/');
+export default function Contact(){return <><Breadcrumbs title="Contact" path="/contact/"/><PageIntro eyebrow="Let’s begin" title="A space starts with a conversation."><p>Tell us what you have in mind. We’ll use your brief to understand where we can help.</p></PageIntro><section className="wrap contact-grid"><aside id="contact-options"><p className="eyebrow">Based in Jakarta</p><h2>Ideas welcome.<br/><em>Details can follow.</em></h2><p>Residential. Commercial. Ruko.<br/>Interior + Architecture + Build.</p><p>West Jakarta, Jakarta and surrounding areas. Projects outside Jakarta and property-agent partnerships are welcome to discuss.</p>{site.whatsapp?<a className="text-link" href={whatsappUrl()}>WhatsApp Us ＋</a>:<p className="contact-pending">WhatsApp number pending<br/><small>Awaiting the studio’s confirmed contact details.</small></p>}{site.email?<a href={`mailto:${site.email}`}>{site.email}</a>:<p className="muted">Email address pending</p>}<p className="muted">Specific studio address and visiting arrangements will be confirmed before appointments.</p></aside><InquiryForm/></section></>;}

@@ -1,0 +1,23 @@
+[
+  {
+    "file": "reference-1.jpg",
+    "page": "https://unsplash.com/photos/modern-living-room-with-minimalist-furniture-and-decor-e0oJLc5FYsg",
+    "source": "https://images.unsplash.com/photo-1771888703723-01d85da1dae1?mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&crop=faces%2Cedges&blend-w=1&blend=000000&blend-mode=normal&blend-alpha=10&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzkxMTkxNTE3fA&ixlib=rb-4.1.0",
+    "license": "https://unsplash.com/license",
+    "note": "Stock reference, not CraftedByDuna work"
+  },
+  {
+    "file": "reference-2.jpg",
+    "page": "https://unsplash.com/photos/architectural-photography-of-house-interior-view-Dzs1VRqDxsw",
+    "source": "https://images.unsplash.com/photo-1496681317311-b313dff2ac18?mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&crop=faces%2Cedges&blend-w=1&blend=000000&blend-mode=normal&blend-alpha=10&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzkxMjA1NzMwfA&ixlib=rb-4.1.0",
+    "license": "https://unsplash.com/license",
+    "note": "Stock reference, not CraftedByDuna work"
+  },
+  {
+    "file": "reference-3.jpg",
+    "page": "https://unsplash.com/photos/modern-minimalist-living-room-with-white-furniture-4r9OKorlcTk",
+    "source": "https://images.unsplash.com/photo-1768609239321-1cfe14893e80?mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&crop=faces%2Cedges&blend-w=1&blend=000000&blend-mode=normal&blend-alpha=10&auto=format&fit=crop&q=60&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzkxMTc0MjUxfA&ixlib=rb-4.1.0",
+    "license": "https://unsplash.com/license",
+    "note": "Stock reference, not CraftedByDuna work"
+  }
+]
