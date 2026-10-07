@@ -25,10 +25,10 @@ export default function Home() { return <>
 	<p className="eyebrow">01 / The studio</p>
 	<div>
 		<h2>We design spaces<br/>that <em>work beautifully.</em></h2>
-	<div className="intro-columns">
-		<p>Good design connects the way a space looks with the way it works. We bring Interior, Architecture, and Build into one integrated process.</p>
-		<p>Fewer gaps between separate vendors. More consistency from the first sketch to the final detail. Spaces shaped around the people and businesses that use them.</p>
-	</div>
+		<div className="intro-columns">
+			<p>Good design connects the way a space looks with the way it works. We bring Interior, Architecture, and Build into one integrated process.</p>
+			<p>Fewer gaps between separate vendors. More consistency from the first sketch to the final detail. Spaces shaped around the people and businesses that use them.</p>
+		</div>
 		<TextLink href="/about/">Meet CraftedByDuna</TextLink>
 	</div>
 </section>
@@ -73,13 +73,13 @@ export default function Home() { return <>
 		<p className="wrap image-note">Stock photography · visual reference</p>
 </section>
 <section className="process-section wrap">
-	<div className="section-heading">
-		<div>
-			<p className="eyebrow">05 / A continuous flow</p>
-			<h2>From possibility<br/><em>to a place of your own.</em></h2>
+		<div className="section-heading">
+			<div>
+				<p className="eyebrow">05 / A continuous flow</p>
+				<h2>From possibility<br/><em>to a place of your own.</em></h2>
+			</div>
+			<TextLink href="/process/">Our Process</TextLink>
 		</div>
-		<TextLink href="/process/">Our Process</TextLink>
-	</div>
 	<Flow/>
 </section>
 <section className="spaces-section wrap">
