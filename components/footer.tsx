@@ -28,11 +28,11 @@ export default function Footer()
 			<span>Designed with purpose. Built with intention.</span>
 		</div>
 	</footer>
-	<Link className="floating-contact" href={whatsappUrl()} aria-label={site.whatsapp?'Discuss a project on WhatsApp':'Contact CraftedByDuna; WhatsApp number pending'}>
+	<Link className="floating-contact" href={whatsappUrl()} target="_blank" rel="noopener noreferrer" aria-label={site.whatsapp?'Discuss a project on WhatsApp':'Contact CraftedByDuna; WhatsApp number pending'}>
 		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
 			<path d="M20 11.5a8 8 0 0 1-12 7L3 20l1.5-5a8 8 0 1 1 15.5-3.5Z"/>
 			<path d="M8 7c0 5 4 9 9 9l1-3-3-1-1 1-3-3 1-1-1-3-3 1Z"/>
 		</svg>
-		<span>{site.whatsapp?'WhatsApp':'Let’s talk'}</span>
+		<span>Let’s talk</span>
 	</Link>
 </>; }

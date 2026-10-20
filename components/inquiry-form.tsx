@@ -3,7 +3,7 @@ import { useState, type FormEvent } from 'react';
 import { site, whatsappUrl } from '@/config/site';
 export default function InquiryForm() {
  const [status,setStatus]=useState(''); const [busy,setBusy]=useState(false); const [draft,setDraft]=useState('');
- async function submit(e:FormEvent<HTMLFormElement>) { e.preventDefault(); const form=e.currentTarget; if(!form.reportValidity())return; const data=new FormData(form); const message=`Hi CraftedByDuna, I would like to discuss a project.\n\n${Array.from(data.entries()).filter(([k])=>k!=='consent').map(([k,v])=>`${k}: ${v}`).join('\n')}`; setDraft(message);
+ async function submit(e:FormEvent<HTMLFormElement>) { e.preventDefault(); const form=e.currentTarget; if(!form.reportValidity())return; const data=new FormData(form); const message=`${site.whatsappMessage}\n\n${Array.from(data.entries()).filter(([k])=>k!=='consent').map(([k,v])=>`${k}: ${v}`).join('\n')}`; setDraft(message);
  if(site.formEndpoint) { setBusy(true); setStatus('Sending your inquiry…'); try { const response=await fetch(site.formEndpoint,{method:'POST',body:data,headers:{Accept:'application/json'}}); if(!response.ok)throw new Error('Submission failed'); setStatus('Thank you. Your inquiry has been sent.'); setDraft(''); form.reset(); } catch { setStatus('Your inquiry could not be sent. Your details remain here. Please retry or use the WhatsApp / copy option below.'); } finally { setBusy(false); } }
  else setStatus(site.whatsapp?'Your inquiry is ready. Continue on WhatsApp to send it; it has not been sent yet.':'Contact setup is pending. Your inquiry is ready to copy, but has not been sent or saved to a server.');
  }
